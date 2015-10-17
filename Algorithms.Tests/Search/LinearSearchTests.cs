@@ -16,7 +16,6 @@ namespace Algorithms.Tests.Search
             _haystack = new string[] { "a", "b", "c" };
         }
 
-
         [TestMethod]
         [ExpectedException(typeof(ArgumentNullException))]
         public void Search_NeedleNull_ThrowsException()
