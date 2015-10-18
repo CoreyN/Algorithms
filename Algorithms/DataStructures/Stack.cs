@@ -27,7 +27,6 @@ namespace Algorithms.DataStructures
         public T Peek()
         {
             ThrowInvalidOperationExceptionIfEmpty("Peek");
-
             return _array[Count - 1];
         }
 

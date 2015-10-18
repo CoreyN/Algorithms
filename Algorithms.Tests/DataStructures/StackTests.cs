@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Algorithms.DataStructures;
 
@@ -83,8 +84,7 @@ namespace Algorithms.Tests.DataStructures
 
         private void PushElements(int[] elements)
         {
-            foreach (int n in elements)
-                _stack.Push(n);
+            elements.ToList().ForEach(e => _stack.Push(e));
         }
     }
 }
